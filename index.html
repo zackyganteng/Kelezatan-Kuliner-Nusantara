@@ -10,75 +10,57 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #fff7e6;
             color: #333;
         }
 
         header {
-            background: url('https://source.unsplash.com/1600x900/?food') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/1600x900/?indonesian-food') no-repeat center center/cover;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
             color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin: 0;
         }
 
         header p {
-            font-size: 1.2em;
-        }
-
-        nav {
-            background: #ff6600;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
+            font-size: 1.3em;
+            font-weight: 300;
         }
 
         .content {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 40px 10px;
         }
 
         article {
             background: white;
             margin: 15px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 320px;
             text-align: center;
+            transition: 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         article img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
+            height: 200px;
+            object-fit: cover;
         }
 
         article h2 {
@@ -91,8 +73,24 @@
             background: #333;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 30px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -102,42 +100,33 @@
         <p>Perpaduan Rasa dan Tradisi dari Berbagai Daerah</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Resep</a></li>
-            <li><a href="#">Kuliner Daerah</a></li>
-            <li><a href="#">Kontak</a></li>
-        </ul>
-    </nav>
-
     <section class="content">
         <article>
-            <img src="https://source.unsplash.com/300x200/?rendang" alt="Rendang">
+            <img src="https://source.unsplash.com/320x200/?rendang" alt="Rendang">
             <h2>Rendang: Sajian Daging dengan Rempah Kaya</h2>
             <p>Rendang adalah makanan khas Minangkabau yang terkenal dengan cita rasa kaya dari santan dan rempah-rempah.</p>
         </article>
 
         <article>
-            <img src="https://source.unsplash.com/300x200/?gudeg" alt="Gudeg">
+            <img src="https://source.unsplash.com/320x200/?gudeg" alt="Gudeg">
             <h2>Gudeg: Manisnya Kelezatan Khas Yogyakarta</h2>
             <p>Gudeg terbuat dari nangka muda yang dimasak dengan gula aren dan santan, memberikan cita rasa khas manis dan gurih.</p>
         </article>
 
         <article>
-            <img src="https://source.unsplash.com/300x200/?pempek" alt="Pempek">
+            <img src="https://source.unsplash.com/320x200/?pempek" alt="Pempek">
             <h2>Pempek: Camilan Ikan Khas Palembang</h2>
             <p>Pempek dibuat dari ikan dan tepung sagu, disajikan dengan kuah cuko yang asam-manis-pedas.</p>
         </article>
 
         <article>
-            <img src="https://source.unsplash.com/300x200/?soto" alt="Soto">
+            <img src="https://source.unsplash.com/320x200/?soto" alt="Soto">
             <h2>Soto: Ragam Kuah Lezat dari Berbagai Daerah</h2>
             <p>Soto memiliki banyak varian, seperti Soto Betawi, Soto Lamongan, dan Coto Makassar, masing-masing dengan keunikan tersendiri.</p>
         </article>
 
         <article>
-            <img src="https://source.unsplash.com/300x200/?es-cendol" alt="Es Cendol">
+            <img src="https://source.unsplash.com/320x200/?es-cendol" alt="Es Cendol">
             <h2>Es Cendol: Minuman Segar Pemanis Hari</h2>
             <p>Es cendol adalah minuman segar yang terbuat dari tepung beras hijau, santan, dan gula merah cair.</p>
         </article>
